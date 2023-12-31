@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Statistiques = () => {
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [majors, setMajors] = useState([]);
   const [major, setMajor] = useState({
     id: null,

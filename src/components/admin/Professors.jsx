@@ -18,7 +18,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Professor = () => {
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [Professors, setProfessors] = useState([]);
   const [selectedgroups, setSelectedgroups] = useState([]);
   const [Professor, setProfessor] = useState({

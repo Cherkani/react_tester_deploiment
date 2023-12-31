@@ -4,7 +4,7 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [user, setUser] = useState({
     email: "",

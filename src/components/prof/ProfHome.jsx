@@ -15,7 +15,7 @@ import Statistiques from './Statistiques'
 
 const ProfHome = () => {
   
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const { componentName } = useParams();
 
   const renderComponent = () => {

@@ -10,7 +10,7 @@ import Modal from "react-modal";
 const PW = () => {
   
  
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
     const [pws, setPWs] = useState([]);
     const [pw, setPW] = useState({
         id: '',

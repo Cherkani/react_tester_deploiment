@@ -10,7 +10,7 @@ const Statistiques = () => {
     const [nbrStedentTab, setNbrStudentTab] = useState([])
     const [nbrPWTab, setNbrPwTab] = useState([])
     const userlogin = JSON.parse(localStorage.getItem("userlogin"))
-    const depurl = import.meta.env.DEP_URL;
+    const depurl = import.meta.env.VITE_DEP_URL;
     const url = `${depurl}/api/groups`;
     const [change, setChange] = useState(false)
 

@@ -7,7 +7,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { AiOutlineTeam } from "react-icons/ai";
 
 const Sidebar = () => {
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const handleLogout = () =>{
     localStorage.removeItem("userlogin")
     window.location = "/"

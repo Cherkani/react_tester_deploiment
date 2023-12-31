@@ -8,7 +8,7 @@ import Prof from '../../assets/b.png';
 const Profil = () => {
 
  
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);

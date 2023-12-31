@@ -19,7 +19,7 @@
     
     const Student = () => {
       
-    const depurl = import.meta.env.DEP_URL;
+    const depurl = import.meta.env.VITE_DEP_URL;
        
       const [students, setStudents] = useState([]);
     

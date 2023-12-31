@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash, faPen, faClose, faAdd } from '@fortawesome/free-solid-svg-icons';
 const Group = () => {
-    const depurl = import.meta.env.DEP_URL;
+    const depurl = import.meta.env.VITE_DEP_URL;
     const [groups, setGroups] = useState([]);
     const [group, setGroup] = useState({
         id: '',

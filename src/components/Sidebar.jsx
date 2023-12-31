@@ -14,7 +14,7 @@ import { BsListTask } from "react-icons/bs";
 const Sidebar = () => {
   
   
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const handleLogout = () =>{
     localStorage.removeItem("userlogin")
     window.location = "/"

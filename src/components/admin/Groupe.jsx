@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import SidebarAdmin from "./SidebarAdmin";
 
 const Groupe = () => {
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [Groupes, setGroupes] = useState([]);
   const [Groupe, setGroupe] = useState({
     id: "",

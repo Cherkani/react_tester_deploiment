@@ -7,7 +7,7 @@ import { DotLoader } from 'react-spinners';
 import {faDownload, faPlus, faTrash, faNoteSticky, faEnvelope, faRefresh, faPhone, faPen, faClose, faAdd, faHouse, faUser, faPeopleGroup, faTooth, faGear, faPaperclip, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import jsPDF from 'jspdf';
 const Dashboard = () => {
-    const depurl = import.meta.env.DEP_URL;
+    const depurl = import.meta.env.VITE_DEP_URL;
     const [groups, setGroups] = useState([]);
     const [pws, setPws] = useState([])
     const [students, setStudents] = useState([]);

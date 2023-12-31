@@ -18,7 +18,7 @@ const Tooth = () => {
   
   
     
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
   const [Professors, setProfessors] = useState([]);
   const [Professor, setProfessor] = useState({
     id: "",

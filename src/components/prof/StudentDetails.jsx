@@ -11,7 +11,7 @@ import { Line } from "react-chartjs-2";
 const StudentDetails = (props) => {
     
     
-  const depurl = import.meta.env.DEP_URL;
+  const depurl = import.meta.env.VITE_DEP_URL;
     const studentId = props.id
     const [student, setStudent] = useState({})
     const [loading, setLoading] = useState(false)
