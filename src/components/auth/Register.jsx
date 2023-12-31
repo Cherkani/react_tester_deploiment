@@ -75,7 +75,7 @@ const Register = () => {
   }
 
   return (
-    <div className={`${isDarkMode ? 'dark' : ''}`}>
+    <div >
      <div className={`dark:bg-slate-900 bg-blue-300 flex h-full items-center py-16 min-h-screen font-[Poppins]`}>
    <main class="w-full max-w-lg  mx-auto p-6">
           <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
@@ -189,14 +189,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-          <div className="absolute top-4 right-4">
-            <button
-              onClick={toggleDarkMode}
-              className="bg-gray-200 dark:bg-gray-700 rounded-full p-2 focus:outline-none focus:ring focus:border-blue-300"
-            >
-              {isDarkMode ? '🌞' : '🌙'}
-            </button>
-          </div>
+        
         </main>
       </div>
       <ToastContainer
