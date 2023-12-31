@@ -4,7 +4,7 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
-  const port = import.meta.env.VITE_PORT_SPRING;
+  const depurl = import.meta.env.DEP_URL;
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [user, setUser] = useState({
     email: "",
@@ -44,7 +44,7 @@ const Register = () => {
     console.log(user)
     
     try {
-      const res = await axios.post(`http://localhost:${port}/api/users/register/professor`, user)
+      const res = await axios.post(`${depurl}/api/users/register/professor`, user)
       console.log(res.data)
       notify(res.data.message)
       setUser({

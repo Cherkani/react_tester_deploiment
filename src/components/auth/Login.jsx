@@ -4,7 +4,7 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
-  const port = import.meta.env.VITE_PORT_SPRING;
+  const depurl = import.meta.env.DEP_URL;
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [user, setUser] = useState({
     email:"",
@@ -36,7 +36,7 @@ const Login = () => {
     console.log(user)
    
     try {
-      const res = await axios.post(`http://localhost:${port}/api/users/login`,user)
+      const res = await axios.post(`${depurl}/api/users/login`,user)
       console.log(res.data)
       setUser({
         email:"",
