@@ -116,7 +116,7 @@
     
       const updateStudent = async () => {
         console.log(student);
-        const rep = await axios.put(`${url}/${student.id}`, student);
+        const rep = await axios.put(`${depurl}/${student.id}`, student);
         reset();
         fetchStudent();
         notify("updated");
